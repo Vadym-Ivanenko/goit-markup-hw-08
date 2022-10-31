@@ -1,4 +1,8 @@
 .occupation {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
   &__container {
     text-align: center;
     padding-top: 0;

@@ -2,23 +2,23 @@
   &__container {
     background-color: var(--second-color);
   }
-
-  &__title {
-    text-align: center;
-  }
 }
 
 .clients-list {
   &__container {
     display: flex;
-    gap: 30px;
-    margin-top: 50px;
-    padding: 0;
+    @media screen and (min-width: 480px) {
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+    }
   }
 
   &__item {
-    height: 92px;
-    width: 170px;
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      height: 92px;
+    }
   }
 
   &__link {

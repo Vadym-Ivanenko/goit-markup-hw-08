@@ -1,11 +1,18 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .title {
+  text-align: center;
+
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }

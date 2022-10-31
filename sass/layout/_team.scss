@@ -1,16 +1,11 @@
 .team {
   &__container {
-    text-align: center;
-
     background-color: var(--background-first);
   }
 }
 
 .team-list {
   &__container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
     padding: 0;
   }
 
@@ -21,11 +16,15 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--second-color);
+
+    @media screen and (min-width: 480px) {
+      margin-top: 30px;
+    }
   }
 }
 
 .card {
-  padding: 30px 0;
+  padding: 30px 24px;
   &__subtitle {
     font-weight: 500;
     font-size: 16px;

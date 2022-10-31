@@ -2,10 +2,6 @@
   &__wrapper {
     text-align: center;
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
 
     background-color: #c4c4c4;
     background-image: linear-gradient(
@@ -16,25 +12,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 480px) {
+      width: 480px;
+      height: 400px;
+      padding: 118px 0;
+    }
   }
 
   &__title {
     margin: 0 auto;
-    max-width: 696px;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--second-color);
+
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+      line-height: 1.61;
+    }
   }
 
   &__btn {
-    width: 217px;
     margin-top: 30px;
-    padding: 10px 32px;
-    border: none;
   }
 }
