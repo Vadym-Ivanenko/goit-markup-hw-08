@@ -1,19 +1,9 @@
 .benefits-list {
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-  }
-
-  &__item {
-    max-width: 270px;
-  }
-
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    min-width: 450px;
     height: 120px;
 
     background-color: var(--background-first);
