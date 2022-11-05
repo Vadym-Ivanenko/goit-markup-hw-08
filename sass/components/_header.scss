@@ -19,6 +19,7 @@
 }
 
 .main-list {
+  display: none;
   &__item {
     font-weight: 500;
     font-size: 14px;
@@ -42,6 +43,7 @@
 }
 
 .contact-list {
+  display: none;
   &__item {
     font-weight: 500;
     font-size: 14px;
@@ -69,4 +71,40 @@
       fill: var(--accent-color);
     }
   }
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+
+  padding: 48px 0 48px 40px;
+
+  background-color: var(--second-color);
+}
+
+.mobile-list {
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: inherit;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mobile-list {
 }
