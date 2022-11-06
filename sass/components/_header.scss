@@ -18,6 +18,9 @@
     &__container {
       display: flex;
     }
+    &__logo {
+      margin-right: 88px;
+    }
   }
 }
 
@@ -27,6 +30,10 @@
   }
 
   @media screen and (min-width: 768px) {
+    &__container {
+      display: flex;
+      padding: 0;
+    }
     &__item {
       font-weight: 500;
       font-size: 14px;
@@ -54,31 +61,33 @@
   @media screen and (min-width: 480px) {
     display: none;
   }
-  &__item {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    margin-right: 50px;
-
-    &:last-child {
-      margin-right: 0;
+  @media screen and (min-width: 768px) {
+    &__container {
+      display: block;
+      padding: 0;
     }
-  }
+    &__item {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.33;
+      letter-spacing: 0.02em;
+    }
 
-  &__link {
-    padding: 32px 0;
-    gap: 10px;
-    color: var(--third-color);
-    fill: var(--third-color);
+    &__link {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      gap: 10px;
+      color: var(--third-color);
+      fill: var(--third-color);
 
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
     }
   }
 }
