@@ -16,7 +16,7 @@
 
   &__item {
     @media screen and (min-width: 480px) {
-      width: 210px;
+      width: calc((100%-210px) / 15px);
       height: 92px;
     }
   }

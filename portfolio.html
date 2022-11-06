@@ -29,10 +29,12 @@
           >
           <ul class="main-list main-list__container list">
             <li class="main-list__item item">
-              <a class="main-list__link link" href="./index.html">Студія</a>
+              <a class="main-list__link link current" href="./index.html"
+                >Студія</a
+              >
             </li>
             <li class="main-list__item item">
-              <a class="main-list__link link current" href="./portfolio.html"
+              <a class="main-list__link link" href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
@@ -59,6 +61,82 @@
             >
           </li>
         </ul>
+
+        <button
+          type="button"
+          class="menu-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Вмикач мобільного меню">
+            <use
+              class="icon-burger"
+              href="./images/icons.svg#icon-burger"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+        <button type="button" class="menu-button js-close-menu">
+          <svg width="40" height="40" aria-label="Вмикач мобільного меню">
+            <use class="icon-cross" href="./images/icons.svg#icon-closee"></use>
+          </svg>
+        </button>
+        <div class="mobile-navigations">
+          <ul class="mobile-list list">
+            <li class="mobile-list__item item">
+              <a class="mobile-list__link link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-list__item item">
+              <a
+                class="mobile-list__link link mobile-current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-list__item item">
+              <a class="mobile-list__link link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-contact">
+          <ul class="mobile-contact-list list">
+            <li class="mobile-contact-list__item item">
+              <a
+                class="mobile-contact-list__link mobile-contact-list__link--tel link"
+                href="tel:+380961111111"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contact-list__item item">
+              <a
+                class="mobile-contact-list__link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-social">
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list__item item">
+              <a href="" class="mobile-social-list__link link">Instagram</a>
+            </li>
+            <li class="mobile-social-list__item item">
+              <a href="" class="mobile-social-list__link link">Twitter</a>
+            </li>
+            <li class="mobile-social-list__item item">
+              <a href="" class="mobile-social-list__link link">Facebook</a>
+            </li>
+            <li class="mobile-social-list__item item">
+              <a href="" class="mobile-social-list__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -392,5 +470,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
