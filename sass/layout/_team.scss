@@ -7,6 +7,14 @@
 .team-list {
   &__container {
     padding: 0;
+    @media screen and (min-width: 480px) {
+      margin-top: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
   }
 
   &__item {
@@ -18,7 +26,15 @@
     background-color: var(--second-color);
 
     @media screen and (min-width: 480px) {
+      width: 450px;
       margin-top: 30px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      margin: 0;
+      width: 354px;
     }
   }
 }

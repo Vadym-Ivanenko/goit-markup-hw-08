@@ -14,15 +14,13 @@
     background-size: cover;
 
     @media screen and (min-width: 480px) {
-      width: 480px;
-      height: 400px;
+      min-width: 480px;
+      min-height: 400px;
       padding: 118px 0;
     }
   }
 
   &__title {
-    margin: 0 auto;
-
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -32,6 +30,10 @@
     @media screen and (min-width: 480px) {
       font-size: 26px;
       line-height: 1.61;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      width: 360px;
     }
   }
 
