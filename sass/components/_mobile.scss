@@ -23,6 +23,8 @@
 
 .menu-container {
   @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -69,7 +71,7 @@
 }
 
 .mobile-contact {
-  margin-top: 302px;
+  margin-top: auto;
   &-list {
     &__item {
       margin-top: 32px;
