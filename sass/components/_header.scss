@@ -23,6 +23,11 @@
       margin-right: 88px;
     }
   }
+  @media screen and (min-width: 1200px) {
+    &__logo {
+      margin-right: 93px;
+    }
+  }
 }
 
 .main-list {
@@ -89,6 +94,24 @@
       &:focus {
         fill: var(--accent-color);
       }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      display: flex;
+      margin-left: auto;
+    }
+    &__item {
+      margin-right: 50px;
+      font-size: 14px;
+      line-height: 1.14;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      padding: 32px 0;
     }
   }
 }
