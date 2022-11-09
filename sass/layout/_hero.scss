@@ -4,11 +4,6 @@
     margin: 0 auto;
 
     background-color: #c4c4c4;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero_background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,11 +12,29 @@
       min-width: 480px;
       min-height: 400px;
       padding: 118px 0;
+
+      background-image: var(--bg-image), url(../images/header-bcg-mobile.jpg);
+      @include retina {
+        background-image: var(--bg-image), url(../images/header-bg-mob-2.jpg);
+      }
     }
+
+    @media screen and (min-width: 768px) {
+      background-image: var(--bg-image), url(../images/hero-bcg-tablet.jpg);
+      @include retina {
+        background-image: var(--bg-image), url(../images/hero-bg-tab-2.jpg);
+      }
+    }
+
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
       height: 600px;
       padding: 200px 0;
+
+      background-image: var(--bg-image), url(../images/hero_background.jpg);
+      @include retina {
+        background-image: var(--bg-image), url(../images/hero-bg-desc-2.jpg);
+      }
     }
   }
 
