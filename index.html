@@ -213,7 +213,7 @@
             <li class="occupation-list__item item">
               <img
                 class="occupation-list__img"
-                src="./images/programing.jpg"
+                srcset="./images/programing.jpg 1x, ./images/pograming-2.jpg 2x"
                 alt="Програмування"
                 width="370"
               />
@@ -224,7 +224,10 @@
             <li class="occupation-list__item item">
               <img
                 class="occupation-list__img"
-                src="./images/adaptation.jpg"
+                srcset="
+                  ./images/adaptation.jpg   1x,
+                  ./images/adaptation-2.jpg 2x
+                "
                 alt="Праця над адаптацією сторінки"
                 width="370"
               />
@@ -235,7 +238,7 @@
             <li class="occupation-list__item item">
               <img
                 class="occupation-list__img"
-                src="./images/design.jpg"
+                srcset="./images/design.jpg 1x, ./images/design-2.jpg 2x"
                 alt="Підбір дизайну"
                 width="370"
               />
@@ -251,12 +254,32 @@
           <h2 class="team__title title">Наша команда</h2>
           <ul class="team-list team-list__container list">
             <li class="team-list__item item">
-              <img
-                class="team-list__img"
-                src="./images/ihor.jpg"
-                alt="член нашої команди"
-                width="354"
-              />
+              <picture>
+                <source
+                  srcset="./images/ihor.jpg 1x, ./images/ihor-desc-2.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-tab-1.jpg 1x,
+                    ./images/ihot-tab-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-mob-1.jpg 1x,
+                    ./images/ihor-mob-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/ihor.jpg"
+                  alt="член нашої команди"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="card__subtitle">Ігор Дем'яненко</h3>
                 <p class="card__descr">Product Designer</p>
@@ -293,12 +316,32 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                class="team-list__img"
-                src="./images/olga.jpg"
-                alt="член нашої команди"
-                width="354"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga-desc-2.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-tab-1.jpg 1x,
+                    ./images/olga-tab-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-mob-1.jpg 1x,
+                    ./images/olga-mob-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/olga.jpg"
+                  alt="член нашої команди"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="card__subtitle">Ольга Рєпіна</h3>
                 <p class="card__descr">Frontend Developer</p>
@@ -335,12 +378,32 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                class="team-list__img"
-                src="./images/mykola.jpg"
-                alt="член нашої команди"
-                width="354"
-              />
+              <picture>
+                <source
+                  srcset="./images/mykola.jpg 1x, ./images/mykola-desc-2.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tab-1.jpg 1x,
+                    ./images/mykola-tab-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-mob-1.jpg 1x,
+                    ./images/mykola-mob-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/mykola.jpg"
+                  alt="член нашої команди"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="card__subtitle">Микола Тарасов</h3>
                 <p class="card__descr">Marketing</p>
@@ -377,12 +440,35 @@
               </div>
             </li>
             <li class="team-list__item item">
-              <img
-                class="team-list__img"
-                src="./images/mykhailo.jpg"
-                alt="член нашої команди"
-                width="354"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo.jpg        1x,
+                    ./images/mykhailo-desc-2.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-tab-1.jpg 1x,
+                    ./images/mykhailo-tab-2.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-mob-1.jpg 1x,
+                    ./images/mykhailo-mob-2.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/mykhailo.jpg"
+                  alt="член нашої команди"
+                />
+              </picture>
+
               <div class="card">
                 <h3 class="card__subtitle">Михайло Єрмаков</h3>
                 <p class="card__descr">UI Designer</p>

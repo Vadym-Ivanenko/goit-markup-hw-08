@@ -1,5 +1,9 @@
 .hero {
+  &__container {
+    min-height: 400px;
+  }
   &__wrapper {
+    padding: 118px 0;
     text-align: center;
     margin: 0 auto;
 
@@ -8,29 +12,26 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 480px) {
-      min-width: 480px;
-      min-height: 400px;
-      padding: 118px 0;
-
+    @media screen and (max-width: 480px) {
       background-image: var(--bg-image), url(../images/header-bcg-mobile.jpg);
       @include retina {
         background-image: var(--bg-image), url(../images/header-bg-mob-2.jpg);
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (max-width: 768px) {
       background-image: var(--bg-image), url(../images/hero-bcg-tablet.jpg);
       @include retina {
         background-image: var(--bg-image), url(../images/hero-bg-tab-2.jpg);
       }
     }
-
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
       height: 600px;
       padding: 200px 0;
+    }
 
+    @media screen and (min-width: 769px) {
       background-image: var(--bg-image), url(../images/hero_background.jpg);
       @include retina {
         background-image: var(--bg-image), url(../images/hero-bg-desc-2.jpg);
@@ -42,7 +43,8 @@
     font-weight: 900;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
+    font-size: 5.4vw;
+    line-height: 1.61;
     color: var(--second-color);
 
     @media screen and (min-width: 480px) {
