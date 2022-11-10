@@ -6,9 +6,7 @@
 
 .team-list {
   &__img {
-    @media screen and (max-width: 480px) {
-      width: 100%;
-    }
+    width: 100%;
   }
   &__container {
     margin-top: 30px;
@@ -42,6 +40,7 @@
       margin: 0;
     }
     @media screen and (min-width: 1200px) {
+      width: 270px;
     }
   }
 }
